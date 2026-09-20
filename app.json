@@ -4,21 +4,75 @@
     "slug": "mahfazati",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/app-logo.png",
+    "backgroundColor": "#060B10",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/app-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#060B10",
+      "dark": {
+        "image": "./assets/app-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#060B10"
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mahfazati.app",
+      "backgroundColor": "#060B10",
+      "userInterfaceStyle": "dark",
+      "splash": {
+        "image": "./assets/app-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#060B10",
+        "dark": {
+          "image": "./assets/app-logo.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#060B10"
+        }
+      }
     },
     "android": {
+      "package": "com.mahfazati.app",
+      "backgroundColor": "#060B10",
+      "userInterfaceStyle": "dark",
+      "splash": {
+        "image": "./assets/app-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#060B10",
+        "dark": {
+          "image": "./assets/app-logo.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#060B10"
+        }
+      },
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#060B10",
+        "foregroundImage": "./assets/app-logo.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/app-logo.png",
+      "backgroundColor": "#060B10"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-navigation-bar",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#060B10",
+          "image": "./assets/app-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "dark": {
+            "image": "./assets/app-logo.png",
+            "backgroundColor": "#060B10"
+          }
+        }
+      ]
+    ]
   }
 }

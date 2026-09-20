@@ -39,3 +39,13 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+/docs/
+/docs/*.md
+
+# IDE & agent files
+.claude/
+.gemini/
+
+# documentation & markdown files
+*.md
+!README.md
